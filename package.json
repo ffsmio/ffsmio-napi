@@ -1,0 +1,66 @@
+{
+  "name": "@ffsm/napi",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "private": false,
+  "author": "S3Tech <s3tech.vn@gmail.com>",
+  "description": "Napi - A framework using with Next.js for building APIs.",
+  "keywords": [
+    "next",
+    "api",
+    "api-framework",
+    "next-server",
+    "nextjs-server",
+    "nextjs-api-server",
+    "next-api-framework",
+    "nextjs-api-framework",
+    "framework",
+    "typescript",
+    "napi",
+    "node",
+    "next-api",
+    "nextjs-api",
+    "nextjs",
+    "nextjs-framework",
+    "nextjs-typescript",
+    "typescript-framework",
+    "typescript-api",
+    "typescript-next",
+    "typescript-nextjs",
+    "typescript-nextjs-api",
+    "typescript-nextjs-framework"
+  ],
+  "homepage": "https://github.com/ffsmio/ffsmio-napi",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ffsmio/ffsmio-napi.git"
+  },
+  "files": [
+    "dist",
+    "tsconfig.napi.json"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/node": "22.14.0",
+    "next": "15.2.4",
+    "rimraf": "6.0.1",
+    "typescript": "5.8.2"
+  },
+  "peerDependencies": {
+    "next": ">=13"
+  },
+  "dependencies": {
+    "@ffsm/cookie": "0.0.7",
+    "@ffsm/serialize": "0.0.2"
+  },
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "dev": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run build"
+  }
+}
